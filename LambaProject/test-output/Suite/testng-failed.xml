@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="classes" name="Test(failed)">
+    <parameter name="browserName" value="Chrome"/>
+    <classes>
+      <class name="Test.TestngClass">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="LaunchBrowser"/>
+          <include name="logoutfromApplication"/>
+          <include name="afterTest"/>
+          <include name="tovarifyhyperexcute"/>
+          <include name="loginApplication"/>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- Test.TestngClass -->
+      <class name="Test.TestNgCase2">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="testB"/>
+          <include name="logoutApllication"/>
+          <include name="cleanobject"/>
+          <include name="launchBrowser"/>
+          <include name="varifyTosmartui"/>
+          <include name="loginApplication"/>
+          <include name="createPOMobject"/>
+        </methods>
+      </class> <!-- Test.TestNgCase2 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
